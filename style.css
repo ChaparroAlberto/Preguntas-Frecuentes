@@ -1,0 +1,125 @@
+body {
+  background-color: #f6f9fc;
+  color: #121521;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  max-width: 90%;
+  margin: auto;
+}
+
+.container {
+  --ar-gutter-x: 1.5rem;
+  --ar-gutter-y: 0;
+  width: 100%;
+  max-width: 95%;
+  padding-right: calc(var(--ar-gutter-x) * 0.5);
+  padding-left: calc(var(--ar-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  --ar-gutter-x: 1.5rem;
+  --ar-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--ar-gutter-y));
+  margin-right: calc(-0.5 * var(--ar-gutter-x));
+  margin-left: calc(-0.5 * var(--ar-gutter-x));
+}
+
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.col-md-4 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.col-md-4 p {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.125rem;
+}
+
+.div-svg {
+  display: flex;
+  justify-content: center;
+  color: #EDCB50;
+}
+
+.col-md-8 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+  margin-left: 8.33333333%;
+}
+
+.acordeon {
+  width: 95%;
+  padding: 2rem;
+}
+
+.acordeon .bloque {
+  margin: 0 0 1rem;
+  padding: 0.75rem;
+  background-color: white;
+  border-radius: 1.125rem;
+  -webkit-border-radius: 1.125rem;
+  -moz-border-radius: 1.125rem;
+  -ms-border-radius: 1.125rem;
+  -o-border-radius: 1.125rem;
+}
+
+.bloque h3 {
+  margin: 0;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.bloque .contenido {
+  padding: 0rem;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+}
+.bloque.activo .contenido {
+  height: 4rem;
+  padding: .75rem;
+  margin: auto;
+}
+.bloque-button{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bloque-button i{
+  padding: 1rem;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+.bloque.activo .bloque-button i{
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
