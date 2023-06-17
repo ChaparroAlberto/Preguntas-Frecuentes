@@ -98,7 +98,7 @@ section {
   -o-transition: all .4s ease;
 }
 .bloque.activo .contenido {
-  height: 4rem;
+  height: auto;
   padding: .75rem;
   margin: auto;
 }
@@ -122,4 +122,26 @@ section {
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   -o-transform: rotate(-180deg);
+}
+
+/* media quieres */
+
+@media (max-width: 768px){
+  .col-md-4{
+    width: 100%;
+  }
+  .col-md-8{
+    width: 100%;
+    margin-left: 0;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .acordeon {
+    padding: 2rem 0;
+  }
+  .bloque h3{
+    font-size: 1.0625rem;
+  }
+  
 }
