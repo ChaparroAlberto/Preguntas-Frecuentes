@@ -139,6 +139,7 @@ section {
   }
   .acordeon {
     padding: 2rem 0;
+    width: 100%;
   }
   .bloque h3{
     font-size: 1.0625rem;
